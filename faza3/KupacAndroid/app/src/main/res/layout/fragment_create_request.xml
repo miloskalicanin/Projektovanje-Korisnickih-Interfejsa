@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/create_request_title"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date_begin_label"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/date_begin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="4" />
+
+            <Button
+                android:id="@+id/date_begin_edit"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_date_button"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:text="@string/change"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date_end_label"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/date_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="4" />
+
+            <Button
+                android:id="@+id/date_end_edit"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_date_button"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:text="@string/change"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_method"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/input_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send_request"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:textSize="16sp"
+            android:text="@string/send_request" />
+
+    </LinearLayout>
+</RelativeLayout>
